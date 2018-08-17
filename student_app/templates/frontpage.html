@@ -1,0 +1,35 @@
+{% for subject in heighest_faculty %}
+        <h3>faculty with heighest pass percentage is : {{subject.faculty}}</h3>
+{% endfor %}
+
+
+{% for subject in all_rows %}
+        <h3>Best student in mathematics is : {{subject}}</h3>
+{% endfor %}
+
+
+{% for subject in heighest_count %}
+        <h3>faculty with heighest pass percentage is : {{subject.faculty}}</h3>
+{% endfor %}
+
+
+{% for subject in least_faculty %}
+        <h3>faculty with least pass percentage is : {{subject.faculty}}</h3>
+{% endfor %}
+
+
+{% for subject in top_student %}
+        <h3>{{subject.name}} is top student with marks {{subject.total}}</h3>
+{% endfor %}
+
+
+{% for subject in least_student %}
+        <h3>{{subject.name}} is student a with least marks {{subject.total}}</h3>
+{% endfor %}
+
+
+{% for subject in all_averages %}
+    {% for sub in subject %}
+        <h3>{{sub.subject}} average is {{sub.average}}</h3>
+    {% endfor %}
+{% endfor %}
